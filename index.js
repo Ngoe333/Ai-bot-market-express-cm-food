@@ -146,7 +146,7 @@ async function startBot() {
             }
         }
         else if (text === "commande") { 
-            await sock.sendMessage(sender, { text: "🛒 *Comment commander :* \nVeuillez taper « commande » suivi du nom du plat. \nExemple : *commande Eru & fufu*" });
+            await sock.sendMessage(sender, { text: "🛒 *Comment commander :* \n\n Veuillez taper « menu » suivi du nom du plat. \n\n Exemple : *commande Eru & fufu*" });
         }
         
         // --- DYNAMIC MENU FEATURE ---
