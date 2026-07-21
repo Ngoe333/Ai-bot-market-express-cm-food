@@ -162,7 +162,7 @@ async function startBot() {
             currentMenu.forEach(item => {
                 menuMessage += `🔸 *${item.name}* - FCFA${item.price}\n`;
             });
-            menuMessage += "\n_Pour commander, répondre par 'commande [dish name]'_";
+            menuMessage += "\n_Pour *commander*, répondre par 'commande suivi du des plats. Exp: commande Eru & FuFu'_";
             
             await sock.sendMessage(sender, { text: menuMessage });
         }
