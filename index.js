@@ -145,7 +145,7 @@ async function startBot() {
                 await sock.sendMessage(sender, { text: captionText });
             }
         }
-        else if (text === "commande" || "manger" || "plats" || "un plat") { 
+        else if (text === "commande") { 
             await sock.sendMessage(sender, { text: "🛒 *Comment commander un plat ou plusieur :* \n\n Veuillez taper *menu*" });
         }
         
