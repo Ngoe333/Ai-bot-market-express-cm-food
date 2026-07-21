@@ -1,4 +1,4 @@
-name: MarketExpresscmFood-WhatsApp-Bot
+name: MarketExpress-cm-Food-WhatsApp-Bot
 
 on:
   workflow_dispatch:
