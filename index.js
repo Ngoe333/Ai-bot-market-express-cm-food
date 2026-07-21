@@ -145,8 +145,8 @@ async function startBot() {
                 await sock.sendMessage(sender, { text: captionText });
             }
         }
-        else if (text === "commande") { 
-            await sock.sendMessage(sender, { text: "🛒 *Comment commander :* \n\n Veuillez taper « menu » suivi du nom du plat. \n\n Exemple : *commande Eru & fufu*" });
+        else if (text === "commande" || "manger" || "plats" || "un plat") { 
+            await sock.sendMessage(sender, { text: "🛒 *Comment commander un plat ou plusieur :* \n\n Veuillez taper *menu*" });
         }
         
         // --- DYNAMIC MENU FEATURE ---
@@ -169,10 +169,10 @@ async function startBot() {
 
         // --- GREETINGS ---
         else if (text.includes("Bonjour") || text.includes("Salut") || text.includes("Bonsoir") || text.includes("Manger") || text.includes("bonjour") || text.includes("bonsoir") || text.includes("salut")) {
-            await sock.sendMessage(sender, { text: "👋 *Bienvenu chez Market Express cm Food!* \n\nJe suis votre assistant IA. Tapez *menu* pour découvrir nos délicieux plats, ou tapez *commander [un plat]* pour les acheter immédiatement !" });
+            await sock.sendMessage(sender, { text: "👋 *Bienvenu chez Market Express cm Food!* \n\nJe suis votre assistant IA, tapez *menu* pour découvrir nos délicieux plats," });
         }
         else if (text.includes("contact") || text.includes("call")) {
-            await sock.sendMessage(sender, { text: "📞 *Contact Market Express cm Food:* \n\n- *Email:* support@marketexpresscm.com  \n\n- *Numero:* 657899435" });
+            await sock.sendMessage(sender, { text: "📞 *Contact Market Express cm Food:* \n\n- *Email:* support@marketexpresscm.com  \n\n- *Numero:* 657899435 \n\n- *Address:* Bonaberi Ancien Route"  });
         }
         else {
             await sock.sendMessage(sender, { text: "🤔 Je n'ai pas bien compris ça.\n\nTapez *menu* pour consulter notre carte, ou *commande [plat]* pour passer une commande !" });
